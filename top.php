@@ -1,0 +1,108 @@
+<?
+    session_start();
+?>
+
+<html>
+<head>
+  
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0"> 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css">
+<!-- 오디오 --> 
+<link rel="stylesheet" href="css/style.css" media="screen">
+<meta name="robots" content="noindex,follow">
+<link rel="stylesheet" href="styles/themes/jean/darkwash.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="Description" content="Old School Cassette Player with HTML5 Audio: Vintage format meets modern web tech: an HTML5 audio player with realistic controls">
+        <meta name="Keywords" content="cassette, html5, audio, player, css3, buttons, sounds, vintage, old school, javascript, jquery">
+        <meta name="author" content="Codrops">
+        <link rel="shortcut icon" href="favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css">
+        <link rel="stylesheet" type="text/css" href="css/audio.css">
+      <link rel="stylesheet" type="text/css" href="css/knobKnob.css">
+        <link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+      <script type="text/javascript" src="js/modernizr.custom.69142.js"></script> 
+  <!-- 오디오 -->       
+ 
+ 
+ </head>
+
+
+ <div id="vc-container" class="vc-container">
+           
+            <div class="vc-loader"></div>
+       </div><!-- //vc-container -->
+
+  <h5 align="center">     Today is the First Day of rest of your life </h5>
+    <table width="800" align="right" cellspacing="0" cellpadding="0" border="0">
+
+  <!--메뉴 시작-->
+        <TR>
+          <TD>
+            <a href="main.php" target="main">
+            <img SRC="img/menu_01.png" WIDTH=77 HEIGHT=30 border=0 ALT=""></a>
+            <a href="guestbook/guestbook.php"  target="main"><img src="img/menu_04.png" width=65 HEIGHT=30 border=0 alt=""></a>
+            <a href="aerobic/aerobic.php"  target="main"><img src="img/menu_07.png" width=69 HEIGHT=30 border=0 alt=""></a>
+            <a href="view/image_view.php"  target="main"><img src="img/menu_08.png" width=72 HEIGHT=30 border=0 alt=""></a>
+            <a href="regist/regist.php"  target="main"><img src="img/menu_09.png" width=72 HEIGHT=30 border=0 alt=""></a>
+             <a href="facebook/facebook.php"  target="main"><img src="img/menu_12.png" width=72 HEIGHT=30 border=0 alt=""></a></TD>
+<?
+    if (!$userid)
+    {
+        echo "
+          <TD>
+            <a href='login/login_form.html'  target='main'>
+            <img SRC='img/menu_02.png' WIDTH=87 HEIGHT=30 border=0 ALT=''></a></TD>
+         ";
+    }
+    else
+    {
+        echo "
+         <TD>
+           <a href='login/logoff.php'  target='main'>
+           <img SRC='img/menu_10.png' WIDTH=87 HEIGHT=30 border=0 ALT=''></a></TD>
+         ";
+    }
+    if (!$userid)
+    {
+        echo "
+     <TD>
+       <a href='login/member_form.html'  target='main'>
+       <img SRC='img/menu_03.png' WIDTH=84 HEIGHT=30  border=0 ALT=''></a></TD>
+         ";
+    }
+    else
+    {
+        echo "
+          <TD>
+       <a href='login/modify_memberinfo.php'  target='main'>
+            <img SRC='img/menu_11.png' WIDTH=84 HEIGHT=30  border=0 ALT=''></a></TD>
+         ";
+    }
+?>
+        
+    
+       
+   </TR>
+    </table>
+ 
+<!--메뉴끝-->
+
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+            <!-- KnobKnob by Martin Angelov : https://github.com/martinaglv/KnobKnob -->
+     <script src="js/transform.js"></script>
+     <script src="js/knobKnob.jquery.js"></script>
+
+     <script type="text/javascript" src="js/jquery.cassette.js"></script>
+     <script type="text/javascript">   
+               $(function() {
+            
+                  $( '#vc-container' ).cassette();
+                  
+                  });
+         </script>
+</body>
+</html>
