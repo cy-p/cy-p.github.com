@@ -3,7 +3,7 @@
 .vc-container{
 	text-align: left;
 	height: 80px; /*120*/
-	margin-bottom: 30px;/*50*/
+	margin-bottom: 20px;/*50*/
 	position: relative;
 }
 
@@ -31,7 +31,7 @@
 	width: 31px;
 	height: 31px;
 	bottom: 50px;
-	left: 50%;
+	left: 10%;
 	margin: -15px 0 0 -15px;
 	background: transparent url(../images/ajax-loader.gif) no-repeat center center;
 	display: none;
