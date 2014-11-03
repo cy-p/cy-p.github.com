@@ -124,7 +124,7 @@ ul.pb-strip li img {
 
 /* Positions */
 .pb-wrapper-1 {
-	height: 49%;
+	height: 69%;
 	left: 40%;
 	-webkit-transform: rotate(3deg);
 	-moz-transform: rotate(3deg);
@@ -134,7 +134,7 @@ ul.pb-strip li img {
 }
 
 .pb-wrapper-2 {
-	height: 45%;
+	height: 65%;
 	left: 55%;
 	-webkit-transform: rotate(-2deg);
 	-moz-transform: rotate(-2deg);
@@ -144,7 +144,7 @@ ul.pb-strip li img {
 }
 
 .pb-wrapper-3 {
-	height: 55%;
+	height: 75%;
 	left: 70%;
 	-webkit-transform: rotate(1deg);
 	-moz-transform: rotate(1deg);
@@ -154,7 +154,7 @@ ul.pb-strip li img {
 }
 
 .pb-wrapper-4 {
-	height: 35%;
+	height: 55%;
 	left: 85%;
 }
 
