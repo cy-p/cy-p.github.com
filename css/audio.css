@@ -2,8 +2,8 @@
 /* Main container */
 .vc-container{
 	text-align: left;
-	height: 120px;
-	margin-bottom: 50px;
+	height: 80px; /*120*/
+	margin-bottom: 30px;/*50*/
 	position: relative;
 }
 
