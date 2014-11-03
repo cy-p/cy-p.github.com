@@ -1,15 +1,5 @@
-<?
-   include "dbconn.php";
-
-   $sql = "select * from notice_board order by num desc limit 4";
-   $result_notice = mysql_query($sql, $connect);
-    
-   $sql = "select * from freeboard order by num desc limit 4";
-   $result_freeboard = mysql_query($sql, $connect);
-  
-?>
-
 <html>
+
  <head>
  	<meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
@@ -132,14 +122,6 @@
 
 
 
-<!--
-<body>
-<table width="800" align="center" cellspacing="0" cellpadding="0" border="0">
-<tr align=center>
-<td>
-<img src="img/pr.png" width=600 heigt=100 align=center></td>
-</tr>
--->
 </body>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
